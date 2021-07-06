@@ -6,14 +6,14 @@
         v-for="nav in navigations"
         :key="nav.name"
         class="nav-item">
-        <NuxtLInk
+        <NuxtLink
           :to="nav.href"
           active-class="active"
           :class="{ active: isMatch(nav.path) }"
           class="nav-link"
           exact>
-          {{ nav.name }}
-        </NuxtLInk>
+          {{ nav.name }}>
+        </NuxtLink>
       </div>
     </div>
     <div

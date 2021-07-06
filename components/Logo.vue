@@ -1,9 +1,9 @@
 <template>
-  <NuxtLInk
+  <NuxtLink
     to="/"
     class="logo">
     <span>OMDbAPI</span>.COM
-  </NuxtLInk>
+  </NuxtLink>
 </template>
 
 <style lang="scss" scoped>

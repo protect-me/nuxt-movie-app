@@ -1,5 +1,5 @@
 <template>
-  <NuxtLInk
+  <NuxtLink
     :to="`/movie/${movie.imdbID}`"
     :style="{ backgroundImage: `url(${movie.Poster})` }"
     class="movie">
@@ -15,7 +15,7 @@
         {{ movie.Title }}
       </div>
     </div>
-  </NuxtLInk>
+  </NuxtLink>
 </template>
 
 <script>
