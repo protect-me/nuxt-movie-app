@@ -39,7 +39,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/dotenv'
   ],
   styleResources: {
     scss: [
@@ -64,7 +65,7 @@ export default {
 
   serverMiddleware: [
     {
-      path: '/.netlify/functions/movie',
+      path: '/api/movie',
       handler: '~/server-middleware/movie.js'
     }
   ]
